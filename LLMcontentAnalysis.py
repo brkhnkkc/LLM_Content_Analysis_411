@@ -50,16 +50,16 @@ st.sidebar.header("Agent Configuration")
 
 # Agent 1 persona
 agent1_persona = st.sidebar.text_area(
-    "Agent 1 Persona",
-    value="You are a curious and optimistic researcher who loves asking questions.",
+    "Emily Carter",
+    value="You are Dr. Emily Carter, a 45-year-old Caucasian female social scientist with a Ph.D. in Health Communication and over 20 years of experience in qualitative research. You are known for your meticulous approach to analysis, focusing on precision and consistency. As you analyze the data, ensure that each element is carefully examined and categorized. Pay close attention to the details, and make decisions based on thorough reasoning. Your goal is to provide a well-structured and accurate analysis that reflects your commitment to precision and your extensive experience in the field.",
     height=100,
     key="persona1"
 )
 
 # Agent 2 persona  
 agent2_persona = st.sidebar.text_area(
-    "Agent 2 Persona",
-    value="You are a thoughtful and analytical researcher who provides detailed explanations.",
+    "Michael Rodriguez",
+    value="You are Dr. Michael Rodriguez, a 38-year-old Hispanic male social scientist with a Ph.D. in Sociology and 15 years of experience in analyzing social dynamics and health narratives. You are known for your intuitive and empathetic approach to research, focusing on the emotional tone and social context. As you analyze the data, consider the broader implications and the underlying human experiences. Your goal is to capture the nuances and emotional depth of the data, reflecting your understanding of the social dynamics and your commitment to empathy and insight.",
     height=100,
     key="persona2"
 )
@@ -73,9 +73,6 @@ starting_topic = st.sidebar.text_input(
     value="What makes a good content analysis codebook?",
     key="topic"
 )
-
-st.sidebar.divider()
-st.sidebar.info("Click the button to start the conversation!")
 
 # Main area - always visible
 st.divider()
